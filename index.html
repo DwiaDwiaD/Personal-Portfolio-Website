@@ -187,12 +187,16 @@
         <section id="contact-us" class="body-wrapper row-rev">
             <div class="body-page">
                 <h1 class="R-Beanie"> Contact Me</h1>
-                <form action="thank-you.html" method="post" class="contact-form">
+                <form action="https://formsubmit.co/mohits23@iitk.ac.in" method="POST" class="contact-form">
                     <input type="text" name="name" placeholder="Your Name" class="btn" required>
-                    <input type="email" placeholder="Your Email" class="btn" required>
-                    <textarea name="Message" rows="5" placeholder="Your Message" class="btn" required></textarea>
+                    <input type="email" name="email" placeholder="Your Email" class="btn" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" class="btn" required></textarea>
+
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission!">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <input type="submit" value="Send" class="btn send">
-                    <input type="hidden" name="redirect" value="thank-you.html">
                 </form>
             </div>
             <div class="body-header">
