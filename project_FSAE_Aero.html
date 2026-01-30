@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+    
+    <!-- redirect to home if needed -->
+    <!-- <meta http-equiv="refresh" content="5;url=index.html"> -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html#home" class="logo R-Beanie">Mohit Sharma</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about" class="no-deco">About</a></li>
+                <li><a href="index.html#skills" class="no-deco">Skills</a></li>
+                <li><a href="index.html#projects" class="no-deco">Projects</a></li>
+                <li><a href="gallery.html" class="no-deco">Gallery</a></li>
+                <li><a href="index.html#contact-us" class="no-deco">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="body-page thank-you">
+            <div>
+                <h1><span id="title" class="R-Beanie pad-marg">FSAE-Aerodynamics</span> </h1>
+            </div>
+                <nav class="pad-marg">
+                <ul class="nav-links">
+                    <li><a href="#intro" class="no-deco">Introduction</a></li>
+                    <li><a href="#approach" class="no-deco">Approach</a></li>
+                    <li><a href="#Front-wing" class="no-deco">Front-wing</a></li>
+                    <li><a href="#Rear-wing" class="no-deco">Rear-wing</a></li>
+                    <li><a href="#computational-scope" class="no-deco">Computational-scope</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="intro" class="body-wrapper">
+            <div class="body-page">
+                <h1 class="R-Beanie">Introduction</h1>
+                <p class="p1">I led the <strong>Aerodynamic design</strong> of IIT Kanpur’s next FSAE car from end-to-end, developing the team’s first full aero package in over five years.</p>
+                <div class="body1">
+                    <div class="img-card">
+                        <img src="Rear-wing/side_vortex_vel_qnorm_1.png" aria-placeholder="Vortex structure, Rear-wing">
+                        <div class="overlay-text">
+                            <p><strong>Vortex structures formed by flow over the rear wing</strong><br><br>-CFD(velocity), Side View</p>
+                        </div>
+                    </div>
+                    <p class="p2">The goal was not just to generate down-force (while minimizing drag), but to control vortical structures for robustness across various ride heights and operating conditions.<br><br>
+                    A mix of analytical models, 2D and 3D CFD, and iterative vortex-driven geometry development was used to design and validate the package.<br><br>
+                    Robust, manufacturable geometries were prioritized so the concepts could be implemented and iterated reliably by the team.
+                    </p>
+                </div>
+                <a href="#approach" class="btn"> <h3 class="R-Beanie">Go to Approach &rArr;</h3> </a>
+            </div>
+            <div class="body-header">
+                <span>I</span>
+                <span>N</span>
+                <span>T</span>
+                <span>R</span>
+                <span>O</span>
+            </div>
+        </section>
+        
+        <section id="approach" class="body-wrapper row-rev backgnd">
+            <div class="body-page">
+                <h1 class="R-Beanie">Approach</h1>
+                <p class="p1">
+                    This aero package was developed around <strong>vortex control rather than brute-force camber</strong>.
+                    Across both front and rear wings, geometry was used to create coherent streamwise vortices that
+                    seal low-pressure regions, stabilize suction surface, and reduce sensitivity to ride height and flow disturbances.
+                </p>
+                <ul class="nav-links">
+                    <li class="img-card">
+                        <p>Target Selection</p>
+                        <p class="p2">Lap-time sensitivity analysis and 
+                            OptimumG-based estimates were used to define downforce and balance targets. 
+                        </p>
+                    </li>
+                    <li><p>&rarr;</p></li>
+                    <li class="img-card">
+                        <p>Airfoil & Element selection</p>
+                        <p class="p2">Multi-element airfoil theory and extensive 2D CFD were used to determine flap and main-element geometry.
+                            Chord split, gap, overlap and relative angle were optimized for lift and pressure recovery.
+                        </p>
+                    </li>
+                    <li><p>&rarr;</p></li>
+                    <li class="img-card">
+                        <p>3D Plain Wing</p>
+                        <p class="p2">
+                            The validated 2D sections were simply extruded into a 3D-wing and paired with simple rectangular endplates. This produced a clean aerodynamic baseline.
+                        </p>
+                    </li>
+                    <li><p>&rarr;</p></li>
+                    <li class="img-card">
+                        <p>Endplate Optimization & Vortex Control (Front & Rear-wings)</p>
+                        <p class="p2">
+                            A sequence of geometric modifications were tested to manipulate the strength, position and formation of the various vortices. 
+                            The goal was to reduce over-wing pressure loss while increasing under-wing suction.
+                        </p>
+                    </li>
+                    <li><p>&rarr;</p></li>
+                    <li class="img-card">
+                        <p>Integration and System-Level Intent</p>
+                        <p class="p2">
+                            The front and rear wings were developed as parts of a single aerodynamic system. Each geometry was engineered to produce coherent, stable vortices.
+                        </p>
+                    </li>
+                </ul>
+                <div class="img-card">
+                    <img src="Front-wing/iso_vortex_pres_qnorm_1.png" aria-placeholder="Vortex structure, Front-wing">
+                    <div class="overlay-text">
+                        <p><strong>Coherent streamwise vortices generated by the front-wing</strong><br><br>-CFD(pressure), Isometric View</p>
+                    </div>
+                </div>
+                
+                <a href="#Front-wing" class="btn"> <h3 class="R-Beanie">Check-out Front-wing &rArr;</h3> </a>
+            </div>
+            <div class="body-header">
+                <span>A</span>
+                <span>P</span>
+                <span>P</span>
+                <span>R</span>
+                <span>O</span>
+                <span>A</span>
+                <span>C</span>
+                <span>H</span>
+            </div>
+        </section>
+
+        <section id="Front-wing" class="body-wrapper">
+            <div class="body-page">
+                <h1 class="R-Beanie">Front-wing</h1>
+                <h3 class="R-Beanie">{Vortex-sealed Under-Wing Concept}</h3>
+                <p class="p1">
+                    The front wing was designed as a <strong>vortex-controlled suction system</strong>, where a stable endplate-generated vortex seals the low-pressure region against the surroundings.
+                </p>
+                <p class="p2">
+                    Early concepts showed that strong outboard loading and aggressive endplate curvature produced a powerful vortex, but also injected large amounts of dirty-air. 
+                    This contaminated the flow field downstream and destabilized the sealing mechanism.
+                    </p>
+                <div class="body1">
+                    <div class="img-card">
+                        <img src="Front-wing/sketch_actual_full.PNG" aria-placeholder="Early concept sketch exploring vortex-sealed ground effect">
+                        <div class="overlay-text">
+                            <p style="color: white;"><strong>Early front-wing vortex concept(design notebook)</strong><br><br>
+                                -These sketches show why tubular outboard section was needed and capture how 
+                                it was expected to entrain and regulate the ground-sealing vortex, and why uncontrolled growth would lead to vortex breakdown and loss of downforce.</p>
+                        </div>
+                    </div>
+                    <div class="p2">
+                        To understand this further, the wing was decomposed into its vortex-producing elements:
+                        <br><br> The outer endplate, the lower edge near the ground, and the interaction between the two. 
+                        <br><br>CFD & Sketch-based reasoning showed that 
+                        uncontrolled strengthening of this vortex leads to vortex breakdown &rarr; the sudden expansion and loss of coherence that causes the seal to collapse.<br><br>
+                        
+                        The sketches capture two critical observations:
+                        <br><br>
+                        <ul>
+                            <li>When the vortex grows too strong, it "blows up" - it expands, detaches from the ground and loses its ability to seal the low pressure under the wing.</li>
+                            <br>
+                            <li>If external flow is allowed to leak into the vortex core, it accelerates the breakdown.</li>
+                        </ul>
+                        <br>
+                        This is why a simple Gurney-based or flap-based approach was rejected for the front wing.<br>
+                        A Gurney would have increased circulation, but without vortex containment, it would have driven the sealing vortex into an unstable regime.
+                    </div>
+                </div>
+                <div class="body1" style="gap: 5%;">
+                    <div class="p2">
+                        After several iterations, the solution emerged: a two-step endplate system.
+                        <br><br>
+                        <ul>
+                            <li><strong>Tubular cross-section</strong> that generated the strong, initial sealing vortex.</li>
+                            <br>
+                            <li><strong>Flat-plate</strong> that allowed this vortex to leak underneath controllably, keeping the vortex contained while still maintaining the seal.</li>
+                        </ul>
+
+                        <div style="justify-items: center; align-items: center;">
+                            <div class="img-card">
+                                <p class="p1">Final front-wing(tube+flat-plate):</p>
+                                <img src="Front-wing/span-wise pressure plot_0.1m.png" aria-placeholder="Spanwise pressure plot(half-wing)">
+                                <div class="overlay-text">
+                                    <p style="color: white;"><br><br><strong>Spanwise pressure plot at x=0.1m (half-wing)</strong><br><br>
+                                        -The plot is flat over both top as-well as bottom and has a lower minima than the older design.<br>
+                                        This implies that an effective vortex-seal was developed by the endplate. 
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="img-card">
+                                <p class="p1">Older front-wing(tube only):</p>
+                                <img src="Front-wing/tube_only_span-wise pressure plot_0.1m.png" aria-placeholder="Spanwise pressure plot(half-wing)">
+                                <div class="overlay-text">
+                                    <p style="color: white;"><br><br><strong>Spanwise pressure plot at x=0.1m (half-wing)</strong><br><br>
+                                        -The plot is flat on top but not over the bottom and tapers towards the ends<br>
+                                        This implies ineffective vortex sealing developed by the endplate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="width-clamp">
+                        <div class="img-card backgnd">
+                            <p class="p1">Final front-wing(tube+flat-plate):</p>
+                            <img src="Front-wing/bottom_vortex_pres_close_qnorm_1_label.PNG" aria-placeholder="Final front-wing vortex structures, CFD">
+                            <div class="overlay-text">
+                                <br><br>
+                                <p>
+                                    <strong>Final front-wing vortex structures(CFD, bottom view)</strong><br><br>
+                                    Initial vortex joins smoothly, without blowing up thereby generating a strong, contained, & steady vortex that seals the suction surface.
+                                <br><br>
+                                    <span class="black">Black-</span> Tube & Flat-plate
+                                </p>
+                            </div>
+                        </div>
+                        <div class="img-card backgnd">
+                            <p class="p1">Older front-wing(tube only):</p>
+                            <img src="Front-wing/tube_only_bottom_vortex_pres_close_qnorm_1_annotated.PNG" aria-placeholder="Final front-wing vortex structures, CFD">
+                            <div class="overlay-text">
+                                <br><br>
+                                <p>
+                                    <strong>Older front-wing vortex structures(CFD, bottom view)</strong><br><br>
+                                    <span class="blue">Blue-</span> Initial vortex leaks & blows-up
+                                <br><br>
+                                    <span class="green">Green-</span> Vortex dies off early-on, instead of becoming the main vortex
+                                <br><br>
+                                    <span class="black">Black-</span> Tube only(no flat-plate)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#Rear-wing" class="btn"> <h3 class="R-Beanie">Check-out Rear-wing &rArr;</h3> </a>
+            </div>
+            <div class="body-header" style="margin-right: -2vw;">
+                <span>F</span>
+                <span>R</span>
+                <span>O</span>
+                <span>N</span>
+                <span>T</span>
+                <span></span>
+                <span>W</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+            </div>
+        </section>
+        
+        <section id="Rear-wing" class="body-wrapper row-rev">
+    <div class="body-page">
+        <h1 class="R-Beanie">Rear-wing</h1>
+        <h3 class="R-Beanie">{Endplate-Controlled Vortex System}</h3>
+
+        <p class="p1">
+            The rear wing was developed around a single idea: <strong>Gurney based vortex-control.</strong>
+            Use gurneys to control the vortex's position & strength. These vortices otherwise dilute the pressure difference across the wing.
+        </p>
+
+        <p class="p2">
+            A deliberately simple baseline was used: a single-element wing extruded between two rectangular endplates.
+            This isolates the dominant three-dimensional effect of rear wings:<br> <strong>the lower & upper-edge endplate vortices.</strong>
+        </p>
+
+        <div class="body1">
+            <div class="img-card">
+                <img src="Rear-wing/rear_sketch_1.PNG" aria-placeholder="Early Rear-wing Concepts(Design Notebook)">
+                <div class="overlay-text">
+                    <p style="color:white;">
+                        <strong>Early Rear-wing Concepts(Design Notebook)</strong><br><br>
+                        These sketches show why Gurney-based endplate modifications were needed and help motivate key design decisions.<br>
+                        It also demonstrates the further need for improvement since the major culprit- lower edge vortex- is still left unchecked.
+                </div>
+            </div>
+
+            <div class="p2">
+                In this baseline case, the large pressure difference between the upper and lower surfaces drives a vortex at the bottom edge of the endplate.
+                <br><br>
+                This vortex acts as a <strong>pressure short-circuit</strong>, pulling high-energy suction-side flow into its core and reducing the effective pressure difference that produces downforce.
+                <br><br>
+                The goal was therefore not to eliminate vortices, but to <strong>control how and where they form.</strong>
+                <br><br>
+                The first modification was a <strong>flat gurney</strong> added to the trailing edge of the endplate.
+                <br><br>
+                A gurney increases the effective camber of a lifting surface by creating a stagnation region on one side and a separated region on the other.
+                <br><br>
+                Applied to the endplate, it reinforces the low-pressure under-wing(this is because circulation across the endplate is increased) & weakens the upper vortex. However, the lower vortex is strengthened (Katz, RaceCar Aerodynamics).
+                <br><br>
+                
+            </div>
+        </div>
+
+        <div class="body1" style="gap:5%;">
+            <div class="p2">
+                CFD showed that while near-endplate downforce increased slightly, the <strong>stronger vortex pulled even more low-pressure flow off the wing</strong>, increasing leakage.
+                <br><br>
+                This revealed a critical insight:
+                <br><br>
+                <strong>A stronger vortex is not automatically beneficial - if it remains attached to the wing, it degrades suction.</strong>
+            </div>
+            <div class="width-clamp">
+                <div class="img-card backgnd">
+                    <img src="Rear-wing/no_curve_bottom_vortex_pres.png" aria-placeholder="Flat gurney vortex CFD">
+                    <div class="overlay-text">
+                        <p style="color:white;">
+                            <strong>Flat-gurney endplate (CFD, bottom view)</strong><br><br>
+                            The vortex is stronger but remains coupled to the suction surface, increasing pressure leakage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body1">
+            <div class="width-clamp">
+                <div class="img-card backgnd">
+                    <img src="Rear-wing/iso_vortex_vel_qnorm_1.png" aria-placeholder="Top-cut endplate CFD">
+                    <div class="overlay-text">
+                        <p style="color:white;">
+                            <strong>Top-cut endplate (CFD, Back view)</strong><br><br>
+                            Removing endplate area above the wing suppresses unwanted over-wing suction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p2">
+                The flat gurney increased suction on the upper surface of the wing by enabling strong low-pressure regions to form over the endplate.
+                <br><br>
+                To counter this, the top of the endplate was cut away in a triangular profile.
+                <br><br>
+                This reduced pressure drop above the wing while preserving the ability of the endplate to shape the lower vortex.
+            </div>
+        </div>
+
+        <div class="body1" style="gap:5%;">
+            <div class="p2">
+                The final evolution was to <strong>curve the gurney</strong>.
+                <br><br>
+                This does not weaken the vortex - it changes its <strong>trajectory</strong>.
+                CFD showed that the curved gurney caused the vortex to:
+                <br><br>
+                <ul>
+                    <li>Form earlier</li>
+                    <li>Roll away from the wing</li>
+                    <li>And detach into the wake instead of remaining coupled to the suction surface</li>
+                </ul>
+                <br>
+                Pressure contours confirmed that the low-pressure core was now spatially separated from the wing, preventing it from entraining suction-side flow.
+                <br><br>
+                In effect, the curved gurney acted as a <strong>vortex management device</strong>, not a lift device.
+                <div style="justify-items: center; align-items: center;">
+                    <div class="img-card">
+                        <p class="p1">Final rear-wing(Curved-gurney):</p>
+                        <img src="Rear-wing/span_wise_pres_plot_0.1m.png" aria-placeholder="Spanwise pressure plot(half-wing)">
+                        <div class="overlay-text">
+                            <p style="color: white;"><br><br><strong>Spanwise pressure plot at x=0.1m (half-wing)</strong><br><br>
+                                -The plot is flat over both top as-well as bottom and has a lower minima than the older design.<br>
+                                This implies that the vortex was NOT sucked under the wing(i.e. the vortex was detached away from the endplate).
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="img-card">
+                        <p class="p1">Older rear-wing(Flat-gurney):</p>
+                        <img src="Rear-wing/no_curve_spanwise_pres_plot_0.1m.png" aria-placeholder="Spanwise pressure plot(half-wing)">
+                        <div class="overlay-text">
+                            <p style="color: white;"><br><br><strong>Spanwise pressure plot at x=0.1m (half-wing)</strong><br><br>
+                                -The plot is flat on top but not over the bottom and tapers towards the ends<br>
+                                This implies that the vortex was sucked under the wing, increasing the pressure leakage.</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="width-clamp">
+                <div class="img-card backgnd">
+                    <p class="p1">Final rear-wing(Curved-gurney):</p>
+                    <img src="Rear-wing/pres_sweep_2.png" aria-placeholder="Curved-gurney CFD">
+                    <div class="overlay-text">
+                        <p style="color:white;">
+                            <strong>Curved-gurney endplate (CFD, Back view)</strong><br><br>
+                            The vortex is strong but detached from the wing, protecting under-wing suction.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="img-card backgnd">
+                    <p class="p1">Older rear-wing(Flat-gurney):</p>
+                    <img src="Rear-wing/pres_sweep_rectangle.png" aria-placeholder="Flat-gurney CFD">
+                    <div class="overlay-text">
+                        <p style="color:white;">
+                            <strong>Flat-gurney endplate (CFD, Back view)</strong><br><br>
+                            The vortex is sucked under the wing, compromising the suction surface.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="body-header">
+        <span>R</span>
+        <span>E</span>
+        <span>A</span>
+        <span>R</span>
+        <span></span>
+        <span>W</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+    </div>
+</section>
+<section id="computational-scope">
+    
+        <div class="body-page">
+            <h1 class="R-Beanie">Computational Scope</h1>
+            <p class="p1" style="text-align: left;">
+                All aerodynamic development shown here was performed on isolated front and rear wings.
+                This was a deliberate choice:
+                <br><br> 
+                Isolating each wing makes the dominant vortex structures and pressure-leakage mechanisms visible and controllable, which is not possible once the wake of one component contaminates the other.
+                <br><br>
+                In a full car, the front wing’s wake will inevitably interact with the rear wing, and this interaction can shift vortex position, strength, and stability.
+                <br><br>
+                Those effects were not captured here due to computational limits, but the geometries were designed so their vortex functions remain compatible:
+                <br><br>
+                The front wing produces a structured, ground-attached sealing vortex, while the rear wing is shaped to shed and eject vortices into the wake rather than feed them back into the suction surfaces.
+            </p>
+
+            <a href="index.html#projects" class="btn">
+                <h3 class="R-Beanie">Back to Projects &rArr;</h3>
+            </a>
+        </div>
+</section>
+
+    </body>
+</html>
