@@ -24,7 +24,7 @@ for IMG_DIR in IMG_DIRs:
             section = os.path.basename(root)
             gallery_lines.append(f'{indent}<section id="{section}" class="body-page backgnd">')
             # gallery_lines.append(f'{indent}<div class="body-page">')
-            gallery_lines.append(f"{indent}    <h3>{section}</h3>")
+            gallery_lines.append(f"{indent}    <h3 class='R-Beanie'>{section}</h3>")
             gallery_lines.append(f"{indent}    <div class='gallery'>")
             # gallery_lines.append(f"{indent}    <div class='grid'>")
             for img in images:
