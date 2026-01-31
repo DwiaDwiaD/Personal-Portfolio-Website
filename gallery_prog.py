@@ -4,7 +4,7 @@ import re
 # Note: commented out code-snippets are for grid generation. 
 
 # IMG_DIRs = ["Logos"]
-IMG_DIRs = ["Front-wing","Rear-wing","InterIIT","FEM"]
+IMG_DIRs = ["Front-wing","Rear-wing","InterIIT","FEM-Solver"]
 HTML_FILE = "gallery.html"
 # HTML_FILE = "index.html"
 
@@ -22,9 +22,9 @@ for IMG_DIR in IMG_DIRs:
         images = [f for f in files if f.lower().endswith(('.png','.jpg','.jpeg','.webp','.PNG'))]
         if images:
             section = os.path.basename(root)
-            gallery_lines.append(f'{indent}<section id="{section}" class="body-page backgnd">')
+            gallery_lines.append(f'{indent}<section id="{section}" class="body-page backgnd" style=" padding: 10vh 0;">')
             # gallery_lines.append(f'{indent}<div class="body-page">')
-            gallery_lines.append(f"{indent}    <h3 class='R-Beanie'>{section}</h3>")
+            gallery_lines.append(f"{indent}    <h1 class='R-Beanie'>{section}</h1>")
             gallery_lines.append(f"{indent}    <div class='gallery'>")
             # gallery_lines.append(f"{indent}    <div class='grid'>")
             for img in images:
